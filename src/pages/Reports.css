@@ -1,0 +1,66 @@
+.reports {
+  padding: 1.5rem;
+}
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.reports-header h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.reports-subtitle {
+  color: var(--text-light);
+}
+
+.reports .card {
+  margin-bottom: 1.25rem;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.status-card {
+  padding: 1rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 250, 240, 0.85);
+  text-align: center;
+}
+
+.status-badge-lg {
+  margin-bottom: 0.75rem;
+}
+
+.status-count {
+  color: var(--text-light);
+}
+
+.status-amount,
+.amount {
+  color: var(--success-color);
+  font-weight: 700;
+}
+
+.customer-name {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .reports {
+    padding: 1rem;
+  }
+
+  .reports-header {
+    flex-direction: column;
+  }
+}

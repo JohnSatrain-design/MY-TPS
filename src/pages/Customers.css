@@ -1,0 +1,92 @@
+.customers {
+  padding: 1.5rem;
+}
+
+.customers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.customers-header h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.search-container {
+  margin-bottom: 1.25rem;
+}
+
+.search-input {
+  max-width: 420px;
+}
+
+.form-card {
+  margin-bottom: 1.25rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.form-group-span {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.customer-count {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.05);
+  color: var(--text-light);
+}
+
+.customer-name {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+.btn-icon.edit {
+  color: var(--primary-color);
+}
+
+.btn-icon.delete {
+  color: var(--danger-color);
+}
+
+@media (max-width: 768px) {
+  .customers {
+    padding: 1rem;
+  }
+
+  .customers-header,
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .search-input {
+    max-width: 100%;
+  }
+}
